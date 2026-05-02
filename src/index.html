@@ -1,1 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+    <link rel="stylesheet" href="../dist/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+  <script src="../dist/js/cart.js"></script>
+    <script  src="../dist/js/main.js"></script>
+  <script  src="../dist/js/home.js "></script>
+ 
+</head>
+<body>
+<header class="header">
 
+  
+  <div class="header__top">
+    
+    
+   <div class="header__social">
+  <a href="#" class="header__social-link" aria-label="Facebook">
+    <i class="fa-brands fa-facebook-f"></i>
+  </a>
+
+  <a href="#" class="header__social-link" aria-label="Twitter">
+    <i class="fa-brands fa-twitter"></i>
+  </a>
+
+  <a href="#" class="header__social-link" aria-label="Instagram">
+    <i class="fa-brands fa-instagram"></i>
+  </a>
+</div>
+
+  <div class="header__logo">
+  <a href="index.html" class="header__logo-link">
+    <i class="fa-solid fa-suitcase header__logo-icon"></i>
+    <span class="header__logo-text">BEST SHOP</span>
+  </a>
+</div>
+
+    
+    <div class="header__actions">
+      
+      <button class="header__icon" id="loginBtn" aria-label="User account">
+      <i class="fa-regular fa-user"></i>
+      </button>
+
+     
+     <a href="./html/cart.html" class="header__icon" aria-label="Cart">
+  <i class="fa-solid fa-cart-shopping"></i>
+  <span class="header__cart-count" id="cartCount">0</span>
+   </a>
+
+      </div>
+
+  </div>
+
+  
+  <div class="header__divider"></div>
+
+  
+  <nav class="header__nav">
+    <ul class="header__menu">
+
+      <li><a href="index.html" class="header__link header__link--active">Home</a></li>
+      <li><a href="html/catalog.html" class="header__link-c">Catalog</a></li>
+      <li><a href="html/about.html" class="header__link-a">About Us</a></li>
+      <li><a href="html/contact.html" class="header__link-co">Contact Us</a></li>
+
+    </ul>
+  </nav>
+
+</header>
+<main>
+    <!--LOG IN-->
+    <div class="login" id="loginModal">
+  <div class="login__overlay"></div>
+
+  <div class="login__box">
+    <button class="login__close" id="closeLogin">✕</button>
+
+    <h2>Log In</h2>
+
+    <form id="loginForm">
+
+      <input type="email" id="email" placeholder="Email" required />
+
+      <div class="login__password">
+        <input type="password" id="password" placeholder="Password" required />
+        <i class="fa-regular fa-eye" id="togglePassword"></i>
+      </div>
+
+      <button type="submit">Log In</button>
+
+      <p class="login__error" id="loginError"></p>
+
+    </form>
+  </div>
+</div>
+
+
+
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__content">
+      <h1>Smart Style for Every Destination</h1>
+      <button>Discover</button>
+    </div>
+    <img src="./img/Homepage/header image.png" alt="hero">
+  </section>
+
+  <section class="promo">
+
+  <!-- LEFT CARD -->
+  <div class="promo__left">
+    <div class="promo__user">
+      <img src="./img/Homepage/CMO image.png"">
+      <div>
+        <p class="name">Lillian Bennett</p>
+        <span>Chief Marketing Officer</span>
+      </div>
+    </div>
+
+    <h2>Aliquam Faucibus Odionec om.</h2>
+
+    <p>
+   Lorem, ipsum dolor sit amet consectetur adipisicing elit. At amet nostrum iusto labore repellat
+    quos possimus et commodi! Quos praesentium temporibus quisquam voluptatibus tenetur minima voluptates 
+    cupiditate ducimus error? Quisquam, excepturi. Illo consequatur reiciendis ad,
+    cumque velit necessitatibus! Pariatur qui maxime nam quae repudiandae possimus cumque est fugit voluptates eius?
+    </p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+     Fuga velit sunt animi quidem voluptatibus, laborum molestias. Minus optio reprehenderit temporibus.
+    </p>
+  </div>
+
+  <!-- RIGHT CARD -->
+  <div class="promo__right">
+     <img src="./img/Homepage/suitcasemb.png"   alt="suitcase ">
+    <div class="promo__overlay">
+      <h2>25 % Discount</h2>
+      <p>
+        Curabitur vulputate arcu odio, ac facilisis diam accumsan ut.
+      </p>
+      <button>Get Discount</button>
+    </div>
+  </div>
+
+</section>
+
+
+  
+
+<section class="slider">
+
+  <h2>Travel Suitcases</h2>
+
+    <p class="products__subtitle">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, architecto.
+  </p>
+
+  <div class="slider__container">
+
+    <button class="slider__btn slider__btn--prev">‹</button>
+
+    <div class="slider__viewport">
+      <div class="slider__track">
+
+        <div class="slider__item">
+          <img src="./img/Homepage/suitcase real-live-1.png" />
+          <div class="slider__overlay">Travel Style</div>
+        </div>
+
+        <div class="slider__item">
+          <img src="./img/Homepage/suitcase real-live-2.png" />
+          <div class="slider__overlay">Modern Look</div>
+        </div>
+
+        <div class="slider__item">
+          <img src="./img/Homepage/suitcase real-live-3.png" />
+          <div class="slider__overlay">New Collection</div>
+        </div>
+
+        <div class="slider__item">
+          <img src="./img/Homepage/suitcase real-live.png" />
+          <div class="slider__overlay">Premium</div>
+        </div>
+
+        <div class="slider__item">
+          <img src="./img/Homepage/suitcase real-live-1.png" />
+          <div class="slider__overlay">Travel Good</div>
+        </div>
+
+         <div class="slider__item">
+          <img src="./img/Homepage/suitcase real-live-2.png" />
+          <div class="slider__overlay">Last Season</div>
+        </div>
+
+         <div class="slider__item">
+          <img src="./img/Homepage/suitcase real-live-3.png" />
+          <div class="slider__overlay">New Arrival</div>
+        </div>
+
+         <div class="slider__item">
+          <img src="./img/Homepage/suitcase real-live.png" />
+          <div class="slider__overlay">Modern Look</div>
+        </div>
+
+      </div>
+    </div>
+
+    <button class="slider__btn slider__btn--next">›</button>
+
+  </div>
+
+</section>
+
+
+<section class="products" id="newProducts">
+  <h2>Selected Products</h2>
+  <p class="products__subtitle">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, architecto.
+  </p>
+
+  <div class="products__grid">
+
+  <!-- CARD 1 -->
+  <div class="product">
+    <div class="product__imgWrapper">
+      <img src="./img/Homepage/suitcase red.png" alt="">
+    </div>
+    <p class="product__title">Travel Suitcase Red</p>
+    <p class="product__price">$120</p>
+    <button class="product__btn add-to-cart"
+      data-id="1"
+      data-name="Travel Suitcase Red"
+      data-price="120"
+      data-image="./img/Homepage/suitcase-red.png">
+      Add to cart
+    </button>
+  </div>
+
+  <!-- CARD 2 -->
+  <div class="product">
+    <div class="product__imgWrapper">
+      <img src="./img/Homepage/suitcase-beige.png" alt="">
+    </div>
+    <p class="product__title">Modern Suitcase</p>
+    <p class="product__price">$140</p>
+    <button class="product__btn add-to-cart"
+      data-id="2"
+      data-name="Modern Suitcase"
+      data-price="140"
+      data-image="./img/Homepage/suitcase-beige.png">
+      Add to cart
+    </button>
+  </div>
+
+  <!-- CARD 3 -->
+  <div class="product">
+    <div class="product__imgWrapper">
+      <img src="./img/Homepage/suitcase-pink.png" alt="">
+    </div>
+    <p class="product__title">Premium Travel Bag</p>
+    <p class="product__price">$160</p>
+    <button class="product__btn add-to-cart"
+      data-id="3"
+      data-name="Premium Travel Bag"
+      data-price="160"
+      data-image="./img/Homepage/suitcase-pink.png">
+      Add to cart
+    </button>
+  </div>
+
+  <!-- CARD 4 -->
+  <div class="product">
+    <div class="product__imgWrapper">
+      <img src="./img/Homepage/suitcase-blue.png" alt="">
+    </div>
+    <p class="product__title">Classic Suitcase</p>
+    <p class="product__price">$110</p>
+    <button class="product__btn add-to-cart"
+      data-id="4"
+      data-name="Classic Suitcase"
+      data-price="110"
+      data-image="./img/Homepage/suitcase-blue.png">
+      Add to cart
+    </button>
+  </div>
+
+</div>
+</section>
+
+  
+
+<section class="banner">
+
+  <img class="banner__img" src="./img/Homepage/sale.png" alt="Offer">
+
+  <div class="banner__content">
+
+    <div class="banner__left">
+      <h2>50% OFF</h2>
+    </div>
+
+    <div class="banner__right">
+      <h3>Offer of the Month</h3>
+      <p>
+        Discover premium travel suitcases with exclusive discounts and modern design.
+      </p>
+     <a href="./html/catalog.html" class="btn-cta">Get Offer Now</a>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="products" id="newProducts">
+  <h2>New Arrival</h2>
+  <p class="products__subtitle">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, architecto.
+  </p>
+
+  <div class="products__grid">
+
+    <!-- CARD 1 -->
+    <div class="product">
+      <div class="product__imgWrapper">
+        <img src="./img/Homepage/suitcase hand grey.png" alt="">
+      </div>
+      <p class="product__title">Travel Suitcase Black</p>
+      <a href="./html/catalog.html" class="product__btn">View Product</a>
+    </div>
+
+    <!-- CARD 2 (SALE) -->
+    <div class="product">
+      <div class="product__imgWrapper">
+        <span class="product__badge">SALE</span>
+        <img src="./img/Homepage/suitcase blue.png" alt="">
+      </div>
+      <p class="product__title">Modern Suitcase</p>
+       <a href="./html/catalog.html" class="product__btn">View Product</a>
+    </div>
+
+    <!-- CARD 3 (SALE) -->
+    <div class="product">
+      <div class="product__imgWrapper">
+        <img src="./img/Homepage/suitcase dark-blue.png" alt="">
+      </div>
+      <p class="product__title">Premium Travel Bag</p>
+      <a href="./html/catalog.html" class="product__btn">View Product</a>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="product">
+      <div class="product__imgWrapper">
+        <span class="product__badge">SALE</span>
+        <img src="./img/Homepage/suitcase-pink.png" alt="">
+      </div>
+      <p class="product__title">Classic Suitcase</p>
+       <a href="./html/catalog.html" class="product__btn">View Product</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="customers">
+  <h2 class="customers__title">Our Grateful Customers</h2>
+   <p class="products__subtitle">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, architecto.
+  </p>
+
+  <div class="customers__grid">
+
+    <div class="customer-card">
+      <img src="./img/Homepage/grateful customer 1.png"alt="customer">
+
+      <p class="customer-card__text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Optio animi ut quod ratione fuga! Nulla cumque possimus repellendus deserunt! Ducimus.
+      </p>
+
+      <div class="customer-card__info">
+        <span class="name">Ethan Wade, New York</span>
+      </div>
+    </div>
+
+    <div class="customer-card">
+      <img src="./img/Homepage/grateful customer 2.png" alt="customer">
+
+      <p class="customer-card__text">
+       Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Commodi sit fugiat totam vitae cum dicta tempore culpa excepturi rem aliquam.
+      </p>
+
+      <div class="customer-card__info">
+        <span class="name">Jane Reyes, California</span>
+    
+      </div>
+    </div>
+
+    <div class="customer-card">
+      <img src="./img/Homepage/grateful customer 3.png" alt="customer">
+
+      <p class="customer-card__text">
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+       Fuga ut nisi quas assumenda soluta atque deserunt, molestias vel illo repudiandae.
+      </p>
+
+      <div class="customer-card__info">
+        <span class="name">Erica Banks, Miami</span>
+       
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+</main>
+
+<footer class="footer">
+
+  <!-- TOP (BENEFITS) -->
+  <div class="footer__top">
+    <h3>Our Benefits</h3>
+
+    <div class="footer__benefits">
+      <div class="benefit">
+        <img src="./img/Homepage/0dea8ac1abac8d7c0c3ca1ef3e5dd59d2594ab20.png"">
+        <p>Velit nisl sodales eget donec quis volutpat orci.</p>
+      </div>
+
+      <div class="benefit">
+        <img src="./img/Homepage/truck.png"alt="">
+        <p>Dolor eu varius. Morbi fermentum velit nisl.</p>
+      </div>
+
+      <div class="benefit">
+        <img src="./img/Homepage/coin.png"alt="">
+        <p>Malesuada fames ac ante ipsum primis in faucibus.</p>
+      </div>
+
+      <div class="benefit">
+        <img src="./img/Homepage/edu.png" alt="">
+        <p>Nisl sodales eget donec quis volutpat orci.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- MAIN -->
+  <div class="footer__main">
+
+    <div class="footer__col">
+      <h4>About Us</h4>
+      <a href="./html/about.html">Organisation</a>
+      <a href="./html/about.html">Partners</a>
+      <a href="./html/about.html">Clients</a>
+    </div>
+
+    <div class="footer__col">
+      <h4>Interesting Links</h4>
+      <a href="#">Photo Gallery</a>
+      <a href="#">Our Team</a>
+      <a href="#">Socials</a>
+    </div>
+
+    <div class="footer__col">
+      <h4>Achievements</h4>
+      <a href="#">Winning Awards</a>
+      <a href="#">Press</a>
+      <a href="#">Our Amazing Clients</a>
+    </div>
+
+    <div class="footer__col footer__contact">
+      <h4>Contact Us</h4>
+      <p>
+        Bendum dolor eu varius. Morbi fermentum velit sodales eget donec volutpat orci.
+      </p>
+
+      <div class="footer__contact-list">
+<p><i class="fa-solid fa-phone"></i> (+63) 236 6322</p>
+<p><i class="fa-solid fa-envelope"></i> public@news.com</p>
+<p><i class="fa-solid fa-clock"></i> Mon - Fri: 10am - 6pm</p>
+<p><i class="fa-solid fa-location-dot"></i> 637 Jade Valley, Washington Dc</p>
+      </div>
+    </div>
+
+    <div class="Information">
+        <h4>Shipping Information</h4>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, iusto. Dicta odit iure similique soluta 
+            accusantium obcaecati excepturi alias beatae amet architecto nisi, velit nulla, suscipit unde harum quisquam 
+            id fugiat dolorum quia consectetur cum ad minus at? Eum quasi esse officiis nisi omnis quod impedit animi temporibus 
+            corporis blanditiis itaque autem repellat, quos fugiat tempore! Ullam aut nulla, rerum aperiam quisquam aliquam 
+            delectus? Harum, fugiat? Hic vel optio illo.
+        </p>
+
+
+
+    </div>
+
+  </div>
+
+  <!-- BOTTOM -->
+  <div class="footer__bottom">
+    <p>© Copyright 2025</p>
+  </div>
+
+</footer>
+
+
+</body>
+</html>
+  

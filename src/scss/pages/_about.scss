@@ -1,0 +1,282 @@
+.about {
+  width: 100%;
+
+  
+
+  &__hero {
+    position: relative;
+    width: 100vw;
+    height: 420px;
+    margin-left: calc(-50vw + 50%);
+    overflow: hidden;
+  }
+
+  &__hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  &__hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+
+    h1 {
+      font-size: 48px;
+      font-weight: 700;
+    }
+
+    p {
+      margin-top: 10px;
+      font-size: 16px;
+      max-width: 500px;
+    }
+  }
+
+
+  &__features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    padding: 60px 40px;
+  }
+
+  .feature {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    transition: 0.3s;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    .about__icon {
+      font-size: 50px;
+      width: 50px;
+      height: 50px;
+      color: #B92770;
+      margin-bottom: 15px;
+    }
+
+    h3 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 13px;
+      color: #666;
+    }
+  }
+
+
+  &__split {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 60px 40px;
+  }
+
+  &__split-text {
+    flex: 1;
+
+    h2 {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 15px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 12px 24px;
+      background: #B92770;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        background: #000;
+      }
+    }
+  }
+
+  &__split-img {
+    flex: 1;
+
+    img {
+      width: 100%;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+  }
+
+
+  &__team {
+    text-align: center;
+    padding: 60px 40px;
+  }
+
+  &__team-title {
+    font-size: 26px;
+    margin-bottom: 40px;
+    display: inline-block;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 3px;
+      background: #B92770;
+      position: absolute;
+      left: 0;
+      bottom: -8px;
+    }
+  }
+
+  .team {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .team-card {
+    text-align: center;
+
+    img {
+      width: 140px;
+      height: 140px;
+      border-radius: 0;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+    }
+
+    h3 {
+      margin-top: 10px;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 13px;
+      color: #666;
+    }
+  }
+}
+@media (max-width: 1440px) {
+  .about__features {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .about__split {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .about__hero {
+    height: 350px;
+  }
+
+  .about__hero-text h1 {
+    font-size: 36px;
+  }
+
+  .about__hero-text p {
+    font-size: 14px;
+  }
+
+  .about__features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about__split {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about__split-text {
+    align-items: center;
+  }
+
+  .team {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .about__hero {
+    height: 300px;
+  }
+
+  .about__hero-text h1 {
+    font-size: 28px;
+  }
+
+  .about__hero-text p {
+    font-size: 13px;
+  }
+
+  .about__features {
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+  }
+
+  .about__split {
+    padding: 40px 20px;
+  }
+
+  .about__team {
+    padding: 40px 20px;
+  }
+
+  .team {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about__hero {
+    height: 250px;
+  }
+
+  .about__hero-text h1 {
+    font-size: 22px;
+  }
+
+  .about__hero-text p {
+    font-size: 12px;
+  }
+
+  .about__split-text h2 {
+    font-size: 22px;
+  }
+
+  .about__split-text p {
+    font-size: 13px;
+  }
+
+  .about__split-text button {
+    width: 100%;
+  }
+
+  .team-card img {
+    width: 110px;
+    height: 110px;
+  }
+}

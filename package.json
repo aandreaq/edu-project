@@ -6,18 +6,30 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "echo \"Dummy build script required for Autocode Compile\"",
-    "ts-compile": "npx tsc"
-
+    "ts-compile": "npx tsc",
+    "compile": "sass src/scss:dist/css",
+    "dev": "sass --watch src/scss:dist/css",
+    "ts-dev": "npx tsc -w",
+    "lint": "eslint src --ext .ts && stylelint \"src/**/*.scss\""
   },
   "repository": {
     "type": "git",
     "url": ""
   },
   "keywords": [],
-  "author": "",
+  "author": "Andrea Kozar",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "devDependencies": {
-    "typescript": "^6.0.2"
+    "@eslint/js": "^10.0.1",
+    "@typescript-eslint/eslint-plugin": "^8.59.1",
+    "@typescript-eslint/parser": "^8.59.1",
+    "eslint": "^10.3.0",
+    "sass": "^1.99.0",
+    "stylelint": "^17.9.1",
+    "stylelint-config-standard-scss": "^17.0.0",
+    "stylelint-scss": "^7.0.0",
+    "typescript": "^6.0.2",
+    "typescript-eslint": "^8.59.1"
   }
 }

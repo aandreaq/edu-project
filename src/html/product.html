@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products details</title>
+    <link rel="stylesheet" href="../../dist/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+   <script src="../../dist/js/cart.js"></script>
+  <script src="../../dist/js/main.js"></script>
+  <script src="../../dist/js/product.js"></script>
+</head>
+<body>
+  
+      <header class="header">
+
+  
+  <div class="header__top">
+    
+    
+   <div class="header__social">
+  <a href="#" class="header__social-link" aria-label="Facebook">
+    <i class="fa-brands fa-facebook-f"></i>
+  </a>
+
+  <a href="#" class="header__social-link" aria-label="Twitter">
+    <i class="fa-brands fa-twitter"></i>
+  </a>
+
+  <a href="#" class="header__social-link" aria-label="Instagram">
+    <i class="fa-brands fa-instagram"></i>
+  </a>
+</div>
+
+    <div class="header__logo">
+  <a href="../index.html" class="header__logo-link">
+    <i class="fa-solid fa-suitcase header__logo-icon"></i>
+    <span class="header__logo-text">BEST SHOP</span>
+  </a>
+</div>
+
+    
+    <div class="header__actions">
+      
+      <button class="header__icon" id="loginBtn" aria-label="User account">
+      <i class="fa-regular fa-user"></i>
+      </button>
+
+   <a href="cart.html" class="header__icon" aria-label="Cart">
+  <i class="fa-solid fa-cart-shopping"></i>
+  <span class="header__cart-count" id="cartCount">0</span>
+   </a>
+
+      </div>
+
+  </div>
+
+  
+  <div class="header__divider"></div>
+
+  
+  <nav class="header__nav">
+    <ul class="header__menu">
+
+      <li><a href="../index.html"class="header__link-c">Home</a></li>
+      <li><a href="catalog.html" class="header__link-co">Catalog</a></li>
+      <li><a href="about.html" class="header__link-a">About Us</a></li>
+      <li><a href="contact.html" class="header__link-a">Contact Us</a></li>
+
+    </ul>
+  </nav>
+
+</header>
+
+<main>
+<main>
+    <!--LOG IN-->
+    <div class="login" id="loginModal">
+  <div class="login__overlay"></div>
+
+  <div class="login__box">
+    <button class="login__close" id="closeLogin">✕</button>
+
+    <h2>Log In</h2>
+
+    <form id="loginForm">
+
+      <input type="email" id="email" placeholder="Email" required />
+
+      <div class="login__password">
+        <input type="password" id="password" placeholder="Password" required />
+        <i class="fa-regular fa-eye" id="togglePassword"></i>
+      </div>
+
+      <button type="submit">Log In</button>
+
+      <p class="login__error" id="loginError"></p>
+
+    </form>
+  </div>
+</div>
+
+  <!-- HERO -->
+  <section class="product-hero">
+    <img class="product-hero__img" id="productImage" src="" alt="">
+
+    <div class="product-hero__overlay">
+      <h1 id="productName">Product Name</h1>
+    </div>
+  </section>
+
+  <!-- DETAILS -->
+  <section class="product-details">
+
+    <div class="product-details__left">
+      <img id="productMainImg" src="" alt="">
+    </div>
+
+    <div class="product-details__right">
+
+      <h2 id="productTitle"></h2>
+
+      <p id="productPrice"></p>
+
+      <!-- QUANTITY -->
+      <div class="qty">
+        <button id="minus">-</button>
+        <span id="qty">1</span>
+        <button id="plus">+</button>
+      </div>
+
+      <!-- ADD TO CART -->
+      <button id="addToCartBtn">Add to Cart</button>
+
+      <!-- DESCRIPTION -->
+      <p class="product-details__desc">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+
+    </div>
+
+  </section>
+
+  <section class="product-tabs">
+    <div class="product-tabs__header">
+        <button class="tab-btn active" data-tab="details">Details</button>
+        <button class="tab-btn" data-tab="reviews">Reviews</button>
+        <button class="tab-btn" data-tab="shipping">Shipping Policy</button>
+    </div>
+    <div class="product-tabs__content">
+        <div id="details" class="tab-pane active">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum varius eros quis sem egestas, vel euismod lorem pulvinar. Pellentesque sodales, neque ut auctor iaculis, ante neque finibus lectus, non lacinia magna tellus ac nisi. </p>
+            <p>Pellentesque id varius ante. Quisque at erat sit amet erat vulputate interdum. Vivamus nec magna feugiat, pretium nisl nec, placerat sem.</p>
+        </div>
+        <div id="reviews" class="tab-pane">
+    <div class="reviews-container">
+        <!-- LEVA STRANA: LISTA RECENZIJA -->
+        <div class="reviews-list">
+            <p class="reviews-list__count">1 review for Global Explorer Max Comfort Suitcase Pro</p>
+            <div class="review-item">
+                <img src="../img/Product Card/review customer.png" class="review-item__avatar">
+                <div class="review-item__content">
+                    <div class="review-item__header">
+                        <span class="review-item__author">Ella Hooper</span>
+                        <span class="review-item__date">March 5, 2025</span>
+                        <div class="review-item__stars">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <p class="review-item__text">
+                        Nisl sodales eget donec quis volutpat orci. Morbi fermentum velit nisl sodales eget donec quis volutpat orci.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- DESNA STRANA: FORMA ZA DODAVANJE -->
+        <div class="reviews-add">
+            <h3>Add Review</h3>
+            <p>Your email address will not be published. Required fields are marked *</p>
+            
+            <form id="reviewForm" class="review-form">
+                <div class="review-form__rating">
+                    <span>Your rating *</span>
+                    <div class="stars-input">☆☆☆☆☆</div>
+                </div>
+
+                <div class="review-form__group">
+                    <label for="reviewText">Your review *</label>
+                    <textarea id="reviewText" required></textarea>
+                </div>
+
+                <div class="review-form__row">
+                    <div class="review-form__group">
+                        <label for="reviewName">Your Name *</label>
+                        <input type="text" id="reviewName" required>
+                    </div>
+                    <div class="review-form__group">
+                        <label for="reviewEmail">Your Email *</label>
+                        <input type="email" id="reviewEmail" required>
+                    </div>
+                </div>
+
+                <div class="review-form__checkbox">
+                    <input type="checkbox" id="saveInfo">
+                    <label for="saveInfo">Save my name and email in this browser for the next time I comment.</label>
+                </div>
+
+                <button type="submit" class="btn-submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+        <div id="shipping" class="tab-pane">
+            <p>Our shipping policy is simple: we ship worldwide within 3-5 business days.</p>
+        </div>
+    </div>
+</section>
+
+  <!-- RELATED -->
+  <section class="related">
+
+    <h2>You May Also Like</h2>
+
+    <div id="relatedGrid" class="related__grid"></div>
+
+  </section>
+</main>
+    <footer class="footer">
+
+  <!-- TOP (BENEFITS) -->
+  <div class="footer__top">
+    <h3>Our Benefits</h3>
+
+    <div class="footer__benefits">
+      <div class="benefit">
+        <img src="../img/Homepage/19fd564a234e77cc797e4c7885f77bd02749e7ed.png">
+        <p>Velit nisl sodales eget donec quis volutpat orci.</p>
+      </div>
+
+      <div class="benefit">
+        <img src="../img/Homepage/truck.png"alt="">
+        <p>Dolor eu varius. Morbi fermentum velit nisl.</p>
+      </div>
+
+      <div class="benefit">
+        <img src="../img/Homepage/coin.png"alt="">
+        <p>Malesuada fames ac ante ipsum primis in faucibus.</p>
+      </div>
+
+      <div class="benefit">
+        <img src="../img/Homepage/edu.png" alt="">
+        <p>Nisl sodales eget donec quis volutpat orci.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- MAIN -->
+  <div class="footer__main">
+
+    <div class="footer__col">
+      <h4>About Us</h4>
+      <a href="about.html">Organisation</a>
+      <a href="about.html">Partners</a>
+       <a href="about.html">Clients</a>
+    </div>
+
+    <div class="footer__col">
+      <h4>Interesting Links</h4>
+      <a href="#">Photo Gallery</a>
+      <a href="#">Our Team</a>
+      <a href="#">Socials</a>
+    </div>
+
+    <div class="footer__col">
+      <h4>Achievements</h4>
+      <a href="#">Winning Awards</a>
+      <a href="#">Press</a>
+      <a href="#">Our Amazing Clients</a>
+    </div>
+
+
+    <div class="footer__col footer__contact">
+      <h4>Contact Us</h4>
+      <p>
+        Bendum dolor eu varius. Morbi fermentum velit sodales eget donec volutpat orci.
+      </p>
+      <div class="footer__contact-list">
+<p><i class="fa-solid fa-phone"></i> (+63) 236 6322</p>
+<p><i class="fa-solid fa-envelope"></i> public@news.com</p>
+<p><i class="fa-solid fa-clock"></i> Mon - Fri: 10am - 6pm</p>
+<p><i class="fa-solid fa-location-dot"></i> 637 Jade Valley, Washington Dc</p>
+      </div>
+    </div>
+
+    <div class="Information">
+        <h4>Shipping Information</h4>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, iusto. Dicta odit iure similique soluta 
+            accusantium obcaecati excepturi alias beatae amet architecto nisi, velit nulla, suscipit unde harum quisquam 
+            id fugiat dolorum quia consectetur cum ad minus at? Eum quasi esse officiis nisi omnis quod impedit animi temporibus 
+            corporis blanditiis itaque autem repellat, quos fugiat tempore! Ullam aut nulla, rerum aperiam quisquam aliquam 
+            delectus? Harum, fugiat? Hic vel optio illo.
+        </p>
+
+
+
+    </div>
+  </div>
+
+  <!-- BOTTOM -->
+  <div class="footer__bottom">
+    <p>© Copyright 2025</p>
+  </div>
+
+</footer>
+</body>
+</html>
