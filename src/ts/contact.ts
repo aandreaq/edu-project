@@ -7,7 +7,7 @@ function initContact(): void {
     const emailInput = document.getElementById("email") as HTMLInputElement | null;
     const topicInput = document.getElementById("topic") as HTMLInputElement | null;
     const messageInput = document.getElementById("message") as HTMLTextAreaElement | null;
-    const msg = document.getElementById("formMsg") as HTMLElement | null;
+    const msg = document.getElementById("formMsg");
 
   
     if (!form || !emailInput || !nameInput || !topicInput || !messageInput || !msg) {
