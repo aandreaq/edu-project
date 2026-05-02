@@ -91,7 +91,7 @@
 
   </div>
 
-  <!-- 4 FEATURE BOXES -->
+ 
 <div class="about__features">
 
   <div class="feature">
@@ -136,30 +136,25 @@
     </div>
 
     <!-- RIGHT FORM -->
-    <div class="contact__content">
+  <form id="contactForm" class="contact__form">
 
-      <h2>Your Feedback Is Much Appreciated!</h2>
-      <p>We will contact you when you complete the following form!</p>
+    <label for="name">Your Name <span class="required">*</span></label>
+    <input type="text" id="name" required>
 
-      <form id="contactForm" class="contact__form">
+    <label for="email">Your Email Address <span class="required">*</span></label>
+    <input type="email" id="email" required>
 
-  <label>Your Name <span class="required">*</span></label>
-  <input type="text" id="name" required>
+    <label for="topic">Topic <span class="required">*</span></label>
+    <input type="text" id="topic" required>
 
-  <label>Your Email Address <span class="required">*</span></label>
-  <input type="email" id="email" required>
+    <label for="message">Your Message <span class="required">*</span></label>
+    <textarea id="message" required></textarea>
 
-  <label>Topic <span class="required">*</span></label>
-  <input type="text" id="topic" required>
+    <button type="submit">Send</button>
 
-  <label>Your Message <span class="required">*</span></label>
-  <textarea id="message" required></textarea>
+    <p id="formMsg" class="form-msg"></p>
 
-  <button type="submit">Send</button>
-
-  <p id="formMsg" class="form-msg"></p>
-
-</form>
+  </form>
     </div>
 
   </div>
