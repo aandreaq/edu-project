@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "sass src/scss:dist/css && cpx src/index.html dist/",
+    "build": "sass src/scss:dist/css && tsc && cpx src/index.html dist/ && cpx src/img dist/img",
     "ts-compile": "npx tsc",
     "compile": "sass src/scss:dist/css",
     "dev": "sass --watch src/scss:dist/css",
