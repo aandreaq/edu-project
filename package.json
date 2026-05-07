@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "echo \"Dummy build script required for Autocode Compile\"",
+    "build": "sass src/scss:dist/css && cpx src/index.html dist/",
     "ts-compile": "npx tsc",
     "compile": "sass src/scss:dist/css",
     "dev": "sass --watch src/scss:dist/css",
@@ -24,6 +24,7 @@
     "@eslint/js": "^10.0.1",
     "@typescript-eslint/eslint-plugin": "^8.59.1",
     "@typescript-eslint/parser": "^8.59.1",
+    "cpx": "^1.5.0",
     "eslint": "^10.3.0",
     "sass": "^1.99.0",
     "stylelint": "^17.9.1",
